@@ -19,7 +19,7 @@
 
 typedef struct		s_client {
 	int				fd;
-    int             id;
+	int             id;
 	struct s_client	*next;
 }	t_client;
 
