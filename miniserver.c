@@ -18,7 +18,7 @@
 #include <sys/select.h>
 
 typedef struct		s_client {
-	int				fd;
+	int		fd;
 	int             id;
 	struct s_client	*next;
 }	t_client;
