@@ -25,7 +25,7 @@ typedef struct		s_client {
 
 t_client*	g_clients;
 
-int		sock_fd, g_id = 0;
+int	sock_fd, g_id = 0;
 fd_set	curr_sock, read_fds, write_fds;
 char	msg[42];
 char	str[42*2300], tmp[42*2300], buf[42*2300 + 42];
