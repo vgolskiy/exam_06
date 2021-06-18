@@ -48,7 +48,7 @@ int		get_id(int fd) {
 }
 
 int		get_max_fd(void) {
-	int			max = sock_fd;
+	int		max = sock_fd;
 	t_client*	it = g_clients;
 
 	while (it) {
@@ -92,8 +92,8 @@ int		add_client_to_list(int fd) {
 
 void	add_client(void) {
     struct sockaddr_in	clientaddr;
-    socklen_t			len = sizeof(clientaddr);
-    int					client_fd;
+    socklen_t		len = sizeof(clientaddr);
+    int			client_fd;
 
     if ((client_fd = accept(sock_fd, (struct sockaddr *)&clientaddr, &len)) < 0)
         exit_error();
@@ -105,7 +105,7 @@ void	add_client(void) {
 int		delete_client(int fd) {
 	t_client*	it = g_clients;
 	t_client*	old;
-	int			id;
+	int		id;
 
 	if (it && it->fd == fd) {
         g_clients = it->next;
